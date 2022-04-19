@@ -59,6 +59,8 @@
   text-align: center;
   width: 100%;
   font-size: 5vh;
+  border-top: 2px solid white;
+  padding-top: 1%;
 }
 
 .about p {

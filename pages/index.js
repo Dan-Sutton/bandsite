@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
               <a>About</a>
             </li>
             <li>
-              <a>Videos</a>
+              <Link href="/videos">
+                <a>Videos</a>
+              </Link>
             </li>
             <li>
               <a>Testimonials</a>
