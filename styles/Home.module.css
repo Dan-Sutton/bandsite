@@ -69,3 +69,14 @@
   margin-top: -1.3%;
   font-size: 3vh;
 }
+
+.testimonials {
+  background-color: var(--background);
+  width: 100%;
+  border-top: 2px solid white;
+}
+
+.imgconatiner {
+  height: auto;
+  width: 50%;
+}

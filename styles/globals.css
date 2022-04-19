@@ -18,3 +18,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.alice-carousel img {
+  height: auto;
+  width: 30%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alice-carousel {
+  background-color: var(--background);
+  width: 10vw;
+}

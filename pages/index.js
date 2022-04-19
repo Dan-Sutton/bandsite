@@ -2,6 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+const handleDragStart = (e) => e.preventDefault();
+
+const items = [
+  <img src="/images/img1.png" onDragStart={handleDragStart} />,
+  <img src="/images/img2.png" onDragStart={handleDragStart} />,
+  <img src="/images/img3.png" onDragStart={handleDragStart} />,
+  <img src="/images/img4.png" onDragStart={handleDragStart} />,
+  <img src="/images/img5.png" onDragStart={handleDragStart} />,
+  <img src="/images/img6.png" onDragStart={handleDragStart} />,
+];
 
 export default function Home() {
   return (
@@ -54,6 +67,12 @@ export default function Home() {
             experience with songs that will get everyone of all ages up on their
             feet!
           </p>
+        </div>
+
+        <AliceCarousel mouseTracking autoPlay items={items} />
+
+        <div className={styles.testimonials}>
+          <h2>Testimonials</h2>
         </div>
       </main>
     </div>
