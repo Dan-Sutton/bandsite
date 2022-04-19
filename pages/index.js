@@ -46,11 +46,16 @@ export default function Home() {
           </ul>
         </div>
 
-        <img
-          src="/images/logo.png"
-          alt="band logo"
-          className={styles.logo}
-        ></img>
+        <div className={styles.logo}>
+          <Image
+            src="/images/logo.png"
+            alt="band logo"
+            layout="responsive"
+            sizes="10vw"
+            width={100}
+            height={100}
+          ></Image>
+        </div>
 
         <video autoPlay loop muted infinite className={styles.video}>
           <source
