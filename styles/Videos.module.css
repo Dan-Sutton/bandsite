@@ -1,20 +1,48 @@
 .videopage {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--background);
 }
 
 .imggrid {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 90%;
+  flex-wrap: wrap;
 }
 .imggrid img {
   object-fit: cover;
-  width: 20%;
-  height: 140%;
-  margin: 2%;
+  width: 20vw;
+  height: auto;
+  margin: 5%;
 }
 
 .title {
   text-align: center;
+  width: 100%;
+}
+
+.nav {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlist li {
+  padding-right: 30%;
+  list-style: none;
 }
