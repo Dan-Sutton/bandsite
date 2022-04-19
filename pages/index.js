@@ -52,7 +52,7 @@ export default function Home() {
           className={styles.logo}
         ></img>
 
-        <video autoPlay loop muted className={styles.video}>
+        <video autoPlay loop muted infinite className={styles.video}>
           <source
             src="https://res.cloudinary.com/dansutton/video/upload/v1650317649/bandsite/dakota_snt1q8.mp4"
             type="video/mp4"
