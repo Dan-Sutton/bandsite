@@ -69,7 +69,12 @@ export default function Home() {
           </p>
         </div>
 
-        <AliceCarousel mouseTracking autoPlay items={items} />
+        <AliceCarousel
+          mouseTracking
+          autoPlay
+          autoPlayInterval={2000}
+          items={items}
+        />
 
         <div className={styles.testimonials}>
           <h2>Testimonials</h2>
