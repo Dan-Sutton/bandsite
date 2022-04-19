@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Videos.module.css";
+import Image from "next/image";
 
 function videos(props) {
   return (
@@ -20,12 +21,13 @@ function videos(props) {
       </div>
       <h1 className={styles.title}>Videos</h1>
       <div className={styles.imggrid}>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
-        <img src="https://play-lh.googleusercontent.com/coMv1dl31PCfEs6essJoEUwVryaqKHKQvENdZ_WYpN-PXa8Qfitkg3grQxIVN22W5A"></img>
+        <Image
+          src="/images/logo.png"
+          layout="responsive"
+          sizes="10vw"
+          width={100}
+          height={100}
+        ></Image>
       </div>
     </div>
   );

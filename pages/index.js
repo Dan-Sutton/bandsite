@@ -51,9 +51,9 @@ export default function Home() {
             src="/images/logo.png"
             alt="band logo"
             layout="responsive"
-            sizes="10vw"
-            width={100}
-            height={100}
+            sizes="100vw"
+            width={1000}
+            height={1000}
           ></Image>
         </div>
 
