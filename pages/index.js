@@ -30,12 +30,28 @@ export default function Home() {
           </ul>
         </div>
 
+        <img
+          src="/images/logo.png"
+          alt="band logo"
+          className={styles.logo}
+        ></img>
+
         <video autoPlay loop muted className={styles.video}>
           <source
             src="https://res.cloudinary.com/dansutton/video/upload/v1650317649/bandsite/dakota_snt1q8.mp4"
             type="video/mp4"
           />
         </video>
+
+        <div className={styles.about}>
+          <h2>About</h2>
+          <p>
+            Shropshire based 4-piece function band, with a wealth of performing
+            experience. Perfect for your event, we provide a professional
+            experience with songs that will get everyone of all ages up on their
+            feet!
+          </p>
+        </div>
       </main>
     </div>
   );
