@@ -60,7 +60,7 @@ export default function Home() {
             <li>DOCTOR DOCTOR - ROBERT PALMER</li>
             <li>NO ROOTS - ALICE MERTON</li>
             <li>STUCK IN THE MIDDLE WITH YOU - STEALERS WHEEL</li>
-            <li>EX'S AND OH'S - ELLE KING</li>
+            <li>EXS AND OHS - ELLE KING</li>
             <li>DREAMS - FLEEWOOD MAC</li>
             <li>CRAZY LITTLE THING CALLED LOVE - QUEEN</li>
             <li>SAW HER STANDING THERE - THE BEATLES</li>
