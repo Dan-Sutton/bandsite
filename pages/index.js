@@ -7,15 +7,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const handleDragStart = (e) => e.preventDefault();
 
-const items = [
-  <img src="/images/img1.png" onDragStart={handleDragStart} />,
-  <img src="/images/img2.png" onDragStart={handleDragStart} />,
-  <img src="/images/img3.png" onDragStart={handleDragStart} />,
-  <img src="/images/img4.png" onDragStart={handleDragStart} />,
-  <img src="/images/img5.png" onDragStart={handleDragStart} />,
-  <img src="/images/img6.png" onDragStart={handleDragStart} />,
-];
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -27,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.nav}>
-          <h1 className={styles.title}>The Wedding Boys</h1>
+          <img src="/images/logo.png" className={styles.navlogo}></img>
           <ul className={styles.navlist}>
             <li>
               <a>About</a>
@@ -48,18 +39,21 @@ export default function Home() {
 
         <div className={styles.logo}>
           <Image
-            src="/images/logo.png"
-            alt="band logo"
+            src="/images/title.png"
+            alt="band title"
             layout="responsive"
-            sizes="100vw"
-            width={1000}
-            height={1000}
+            sizes="1000vw"
+            width={6.3}
+            height={1}
           ></Image>
+          <h2 className={styles.subtitle}>
+            Shropshire-based function band, perfect for any event
+          </h2>
         </div>
 
         <video autoPlay loop muted infinite className={styles.video}>
           <source
-            src="https://res.cloudinary.com/dansutton/video/upload/v1650317649/bandsite/dakota_snt1q8.mp4"
+            src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
             type="video/mp4"
           />
         </video>
@@ -73,13 +67,6 @@ export default function Home() {
             feet!
           </p>
         </div>
-
-        <AliceCarousel
-          mouseTracking
-          autoPlay
-          autoPlayInterval={2000}
-          items={items}
-        />
 
         <div className={styles.testimonials}>
           <h2>Testimonials</h2>
