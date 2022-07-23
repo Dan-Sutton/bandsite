@@ -26,7 +26,9 @@ export default function Home() {
           </Link>
           <ul className={styles.navlist}>
             <li>
-              <a>About</a>
+              <Link href="/#aboutsection">
+                <a>About</a>
+              </Link>
             </li>
             <li>
               <Link href="/videos">
@@ -34,7 +36,12 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <a>Events</a>
+              <a
+                href="https://www.facebook.com/TheWildfireMusic/events"
+                target="_blank"
+              >
+                Events
+              </a>
             </li>
             <li>
               <Link href="/setlist">
