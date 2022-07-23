@@ -22,7 +22,7 @@ export default function Home() {
             src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
             className={styles.navlogo}
           ></img>
-          <ul className={styles.navlist}>
+          {/* <ul className={styles.navlist}>
             <li>
               <a>About</a>
             </li>
@@ -40,27 +40,27 @@ export default function Home() {
             <li>
               <a>Contact</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
-        <div className={styles.logo}>
-          <img
-            src="https://res.cloudinary.com/dansutton/image/upload/v1658598394/bandsite/title_k36gya.png"
-            alt="band title"
-            layout="responsive"
-            sizes="1000vw"
-            width={1000}
-            height={180}
-          ></img>
-          <h2 className={styles.subtitle}>
-            Shropshire-based function band, perfect for any event
-          </h2>
+
+        <div className={styles.videoandlogo}>
+          <div className={styles.logo}>
+            <img
+              src="https://res.cloudinary.com/dansutton/image/upload/v1658598394/bandsite/title_k36gya.png"
+              alt="band title"
+            ></img>
+            <h2 className={styles.subtitle}>
+              Shropshire-based function band, perfect for any event
+            </h2>
+          </div>
+
+          <video autoPlay loop muted infinite className={styles.video}>
+            <source
+              src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
+              type="video/mp4"
+            />
+          </video>
         </div>
-        <video autoPlay loop muted infinite className={styles.video}>
-          <source
-            src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
-            type="video/mp4"
-          />
-        </video>
 
         <div className={styles.about}>
           <h2 className={styles.sectionheader}>ABOUT.</h2>
