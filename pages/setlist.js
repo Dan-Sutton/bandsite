@@ -39,6 +39,7 @@ export default function Home() {
               <a
                 href="https://www.facebook.com/TheWildfireMusic/events"
                 target="_blank"
+                rel="noreferrer"
               >
                 Events
               </a>
