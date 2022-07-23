@@ -18,28 +18,33 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.nav}>
-          <img src="/images/logo.png" className={styles.navlogo}></img>
+          <img
+            src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
+            className={styles.navlogo}
+          ></img>
           <ul className={styles.navlist}>
             <li>
               <a>About</a>
             </li>
             <li>
               <Link href="/videos">
-                <a>Videos</a>
+                <a>Gallery</a>
               </Link>
             </li>
             <li>
-              <a>Testimonials</a>
+              <a>Events</a>
+            </li>
+            <li>
+              <a>Setlist</a>
             </li>
             <li>
               <a>Contact</a>
             </li>
           </ul>
         </div>
-
         <div className={styles.logo}>
           <Image
-            src="/images/title.png"
+            src="https://res.cloudinary.com/dansutton/image/upload/v1658598394/bandsite/title_k36gya.png"
             alt="band title"
             layout="responsive"
             sizes="1000vw"
@@ -50,7 +55,6 @@ export default function Home() {
             Shropshire-based function band, perfect for any event
           </h2>
         </div>
-
         <video autoPlay loop muted infinite className={styles.video}>
           <source
             src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
@@ -59,17 +63,24 @@ export default function Home() {
         </video>
 
         <div className={styles.about}>
-          <h2>About</h2>
-          <p>
-            Shropshire based 4-piece function band, with a wealth of performing
-            experience. Perfect for your event, we provide a professional
-            experience with songs that will get everyone of all ages up on their
-            feet!
+          <h2 className={styles.sectionheader}>ABOUT.</h2>
+          <p className={styles.text}>
+            The Wildfire are a fresh and energetic Shropshire based
+            function/party band ready to bring a big, unforgettable sound to
+            your event. We cover a wide range of well-known hits suitable for
+            Weddings, Parties and other events. Collectively, The Wildfire has
+            many years of experience providing a professional musical package
+            for clients nationwide. We provide our own PA and lighting system,
+            as well as all the necessary cover/insurance for your event.
           </p>
         </div>
 
-        <div className={styles.testimonials}>
-          <h2>Testimonials</h2>
+        <div className={styles.theband}>
+          <h2 className={styles.sectionheader}>MEET THE BAND.</h2>
+          <img
+            src="https://res.cloudinary.com/dansutton/image/upload/v1658598421/bandsite/headshots_pbuqeq.png"
+            className={styles.headshots}
+          ></img>
         </div>
       </main>
     </div>
