@@ -48,57 +48,28 @@
   align-items: center;
 }
 
-.logo {
-  z-index: 0;
-  position: absolute;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-right: 1.7%;
-}
-
 .navlogo {
   z-index: 2;
   width: 15%;
 }
 
-.subtitle {
-  margin-top: -0.6vh;
-  color: white;
-  text-align: center;
-  font-size: 2.1vw;
-  font-family: monospace;
-  font-weight: 300;
-}
-
-.about {
+.setlist {
   z-index: 0;
   width: 70%;
   height: 100%;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 150vh;
 }
-
-.about p {
+.text {
+  margin-top: -6%;
+}
+.setlist li {
   color: white;
   width: 70%;
-  margin-top: -5%;
   font-size: 2.3vh;
   line-height: 1.6em;
-}
-
-.testimonials {
-  background-color: var(--background);
-  width: 100%;
-  border-top: 2px solid white;
-}
-
-.imgconatiner {
-  height: auto;
-  width: 50%;
 }
 
 .sectionheader {
@@ -106,20 +77,4 @@
   font-size: 6vw;
   color: white;
   font-style: italic;
-}
-
-.headshots {
-  width: 100%;
-  margin-top: -5.4%;
-}
-
-.theband {
-  z-index: 0;
-  width: 70%;
-  height: 100%;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 10%;
 }

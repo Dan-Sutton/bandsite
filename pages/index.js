@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import AliceCarousel from "react-alice-carousel";
+
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const handleDragStart = (e) => e.preventDefault();
@@ -22,7 +22,7 @@ export default function Home() {
             src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
             className={styles.navlogo}
           ></img>
-          {/* <ul className={styles.navlist}>
+          <ul className={styles.navlist}>
             <li>
               <a>About</a>
             </li>
@@ -35,12 +35,14 @@ export default function Home() {
               <a>Events</a>
             </li>
             <li>
-              <a>Setlist</a>
+              <Link href="/setlist">
+                <a>Setlist</a>
+              </Link>
             </li>
             <li>
               <a>Contact</a>
             </li>
-          </ul> */}
+          </ul>
         </div>
 
         <div className={styles.videoandlogo}>
