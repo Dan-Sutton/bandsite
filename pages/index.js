@@ -43,14 +43,14 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.logo}>
-          <Image
+          <img
             src="https://res.cloudinary.com/dansutton/image/upload/v1658598394/bandsite/title_k36gya.png"
             alt="band title"
             layout="responsive"
             sizes="1000vw"
-            width={6.3}
-            height={1}
-          ></Image>
+            width={1000}
+            height={180}
+          ></img>
           <h2 className={styles.subtitle}>
             Shropshire-based function band, perfect for any event
           </h2>
