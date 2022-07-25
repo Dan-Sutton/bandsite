@@ -9,12 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "flat-carousel": "^0.0.1",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-alice-carousel": "^2.5.1",
-    "react-dom": "18.0.0",
-    "react-slideshow-image": "^3.7.3"
+    "react-dom": "18.0.0"
+  
   },
   "devDependencies": {
     "eslint": "8.13.0",
