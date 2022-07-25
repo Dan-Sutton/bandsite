@@ -65,7 +65,13 @@ export default function Home() {
           </li>
 
           <li>
-            <a>Contact</a>
+            <a
+              href="https://www.facebook.com/TheWildfireMusic"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
