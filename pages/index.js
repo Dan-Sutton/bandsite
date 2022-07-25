@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      
+
       <main className={styles.main}>
         <div className={styles.videoandlogo}>
           <div className={styles.logo}>
@@ -56,6 +56,24 @@ export default function Home() {
             src="https://res.cloudinary.com/dansutton/image/upload/v1658598421/bandsite/headshots_pbuqeq.png"
             className={styles.headshots}
           ></img>
+        </div>
+
+        <div id="gallery" className={styles.gallerysection}>
+          <h2 className={styles.sectionheader}>GALLERY.</h2>
+
+          <video controls muted className={styles.galleryvideo}>
+            <source
+              src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
+              type="video/mp4"
+            />
+          </video>
+
+          <video controls muted className={styles.galleryvideo}>
+            <source
+              src="https://res.cloudinary.com/dansutton/video/upload/v1658776266/bandsite/pensax_pujrks.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </main>
     </div>

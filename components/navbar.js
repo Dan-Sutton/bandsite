@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className={styles.nav}>
       <Link href="/">
-        <img 
+        <img
           src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
           className={styles.navlogo}
         ></img>
@@ -17,7 +17,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/videos">
+          <Link href="/#gallery">
             <a>Gallery</a>
           </Link>
         </li>
