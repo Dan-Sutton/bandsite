@@ -101,3 +101,24 @@
   width: 60%;
   margin-bottom: 5%;
 }
+
+.setlistsection {
+  z-index: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  margin-top: -6%;
+  color: white;
+  line-height: 2em;
+}
+
+.sectionheader {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 6vw;
+  color: white;
+  font-style: italic;
+}

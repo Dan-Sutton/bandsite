@@ -1,10 +1,11 @@
 import styles from "../styles/navbar.module.css";
-import Link from "next/link";
+
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   return (
     <div className={styles.nav}>
-      <Link href="/">
+      <Link to="top" spy={true} smooth={true} offset={50} duration={500}>
         <img
           src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
           className={styles.navlogo}
@@ -12,13 +13,36 @@ export default function Navbar() {
       </Link>
       <ul className={styles.navlist}>
         <li>
-          <Link href="/#aboutsection">
-            <a>About</a>
+          <Link
+            to="aboutsection"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            About
           </Link>
         </li>
         <li>
-          <Link href="/#gallery">
-            <a>Gallery</a>
+          <Link
+            to="gallery"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="setlist"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Setlist
           </Link>
         </li>
         <li>
@@ -30,11 +54,7 @@ export default function Navbar() {
             Events
           </a>
         </li>
-        <li>
-          <Link href="/setlist">
-            <a>Setlist</a>
-          </Link>
-        </li>
+
         <li>
           <a>Contact</a>
         </li>

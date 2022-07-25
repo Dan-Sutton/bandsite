@@ -17,7 +17,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className={styles.main}>
+      <main id="top" className={styles.main}>
         <div className={styles.videoandlogo}>
           <div className={styles.logo}>
             <img
@@ -74,6 +74,41 @@ export default function Home() {
               type="video/mp4"
             />
           </video>
+        </div>
+
+        <div id="setlist" className={styles.setlistsection}>
+          <h2 className={styles.sectionheader}>SETLIST.</h2>
+          <ol className={styles.text}>
+            <li>WHAT I LIKE ABOUT YOU - THE ROMANTICS</li>
+            <li>SHE MOVES IN HER OWN WAY - THE KOOKS</li>
+            <li>JUMPING JACK FLASH - THE ROLLING STONES</li>
+            <li>(I CANT GET NO) SATISFACTION - THE ROLLING STONES</li>
+            <li>LIGHTNING BOLT - JAKE BUGG</li>
+            <li>LONELY BOY - THE BLACK KEYS</li>
+            <li>LAST NITE - THE STROKES</li>
+            <li>DOCTOR DOCTOR - ROBERT PALMER</li>
+            <li>NO ROOTS - ALICE MERTON</li>
+            <li>STUCK IN THE MIDDLE WITH YOU - STEALERS WHEEL</li>
+            <li>EXS AND OHS - ELLE KING</li>
+            <li>DREAMS - FLEEWOOD MAC</li>
+            <li>CRAZY LITTLE THING CALLED LOVE - QUEEN</li>
+            <li>SAW HER STANDING THERE - THE BEATLES</li>
+            <li>NEVER CAN TELL - CHUCK BERRY</li>
+            <li>5 COLOURS IN HER HAIR - MCFLY</li>
+            <li>SEX ON FIRE - KINGS OF LEON</li>
+            <li>ROCK N ROLL STAR - OASIS</li>
+            <li>ALL THE SMALL THINGS - BLINK 182</li>
+            <li>PLACE YOUR HANDS - REEF</li>
+            <li>YELLOW - COLDPLAY</li>
+            <li>USE SOMEBODY - KINGS OF LEON</li>
+            <li>GETTING STARTED - SAM FENDER</li>
+            <li>HOLD BACK THE RIVER - JAMES BAY</li>
+            <li>FOOTLOOSE - KENNY LOGGINS</li>
+            <li>DAKOTA - STEREOPHONICS</li>
+            <li>WHAT YOU KNOW - TWO DOOR CINEMA CLUB</li>
+            <li>AS IT WAS- HARRY STYLES</li>
+            <li>COME TOGETHER - THE BEATLES</li>
+          </ol>
         </div>
       </main>
     </div>
