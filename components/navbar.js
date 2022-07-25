@@ -4,13 +4,15 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className={styles.nav}>
-      <img
-        src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
-        className={styles.navlogo}
-      ></img>
+      <Link href="/">
+        <img 
+          src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
+          className={styles.navlogo}
+        ></img>
+      </Link>
       <ul className={styles.navlist}>
         <li>
-          <Link href="#aboutsection">
+          <Link href="/#aboutsection">
             <a>About</a>
           </Link>
         </li>

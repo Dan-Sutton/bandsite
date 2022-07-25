@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 93%;
+  width: 92%;
   position: fixed;
   top: 0;
   margin-top: 1%;
-  margin-right: 5%;
+  margin-left: 1.5%;
 }
 
 .navlist {
@@ -35,4 +35,5 @@
 .navlogo {
   z-index: 2;
   width: 15%;
+  cursor: pointer;
 }
