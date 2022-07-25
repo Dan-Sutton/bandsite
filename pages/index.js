@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import { Link } from "react-scroll";
 import styles from "../styles/Home.module.css";
 
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -13,7 +13,62 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <div className={styles.nav}>
+        <Link to="top" spy={true} smooth={true} offset={50} duration={500}>
+          <img
+            src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
+            className={styles.navlogo}
+          ></img>
+        </Link>
+        <ul className={styles.navlist}>
+          <li>
+            <Link
+              to="aboutsection"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="setlist"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Setlist
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/TheWildfireMusic/events"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Events
+            </a>
+          </li>
+
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div>
 
       <main id="top" className={styles.main}>
         <div className={styles.videoandlogo}>
