@@ -4,8 +4,6 @@ import styles from "../styles/Home.module.css";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 
-const handleDragStart = (e) => e.preventDefault();
-
 export default function Home() {
   return (
     <div className={styles.container}>
