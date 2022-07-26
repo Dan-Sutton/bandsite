@@ -1,10 +1,12 @@
 import Head from "next/head";
 import { Link } from "react-scroll";
 import styles from "../styles/Home.module.css";
-
 import "react-alice-carousel/lib/alice-carousel.css";
+import { useState } from "react";
 
 export default function Home() {
+  const [openMenu, setOpen] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,66 +16,77 @@ export default function Home() {
       </Head>
 
       <div className={styles.nav}>
+        <img
+          src="/images/menuicon.jpeg"
+          className={styles.hamburgericon}
+          onClick={() => {
+            setOpen(!openMenu);
+          }}
+        ></img>
         <Link to="top" spy={true} smooth={true} offset={50} duration={500}>
           <img
             src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
             className={styles.navlogo}
           ></img>
         </Link>
-        <ul className={styles.navlist}>
-          <li>
-            <Link
-              to="aboutsection"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="gallery"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Gallery
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="setlist"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Setlist
-            </Link>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/TheWildfireMusic/events"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Events
-            </a>
-          </li>
 
-          <li>
-            <a
-              href="https://www.facebook.com/TheWildfireMusic"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        {openMenu ? (
+          <ul className={styles.navlist}>
+            <li>
+              <Link
+                to="aboutsection"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="setlist"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Setlist
+              </Link>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/TheWildfireMusic/events"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/TheWildfireMusic"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        ) : (
+          <></>
+        )}
       </div>
 
       <main id="top" className={styles.main}>
