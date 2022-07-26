@@ -9,13 +9,14 @@ export default function Home() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 850) {
-        setOpen(true);
-      }
       if (window.innerWidth < 850) {
         setOpen(false);
       }
+      if (window.innerWidth > 850) {
+        setOpen(true);
+      }
     }
+    window.addEventListener("load", handleResize);
     window.addEventListener("resize", handleResize);
   });
   return (
