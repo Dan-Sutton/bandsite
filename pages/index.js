@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [openMenu, setOpen] = useState(true);
+  const [openMenu, setOpen] = useState(false);
 
   useEffect(() => {
     function handleResize() {
