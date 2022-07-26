@@ -2,11 +2,24 @@ import Head from "next/head";
 import { Link } from "react-scroll";
 import styles from "../styles/Home.module.css";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [openMenu, setOpen] = useState(false);
+  const [openMenu, setOpen] = useState(true);
 
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 850) {
+        setOpen(true);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
   return (
     <div className={styles.container}>
       <Head>
