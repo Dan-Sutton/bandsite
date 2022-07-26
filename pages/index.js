@@ -12,13 +12,11 @@ export default function Home() {
       if (window.innerWidth > 850) {
         setOpen(true);
       }
+      if (window.innerWidth < 850) {
+        setOpen(false);
+      }
     }
-
     window.addEventListener("resize", handleResize);
-
-    return (_) => {
-      window.removeEventListener("resize", handleResize);
-    };
   });
   return (
     <div className={styles.container}>

@@ -172,16 +172,6 @@
   cursor: pointer;
 }
 
-.navlist li:hover {
-  z-index: 3;
-  flex-wrap: nowrap;
-  color: black;
-  background-color: white;
-  list-style: none;
-  margin: 0 3% 0 0;
-  cursor: pointer;
-}
-
 @media (max-width: 850px) {
   .navlist {
     margin-left: 40%;
@@ -216,14 +206,6 @@
     font-size: 5vw;
     font-weight: bold;
     border: none;
-    color: white;
-    width: 50%;
-  }
-  .navlist li:hover {
-    margin-bottom: 30%;
-    font-size: 5vw;
-    border: none;
-    font-weight: bold;
     color: white;
     width: 50%;
   }
