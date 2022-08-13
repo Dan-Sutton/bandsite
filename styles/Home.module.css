@@ -25,6 +25,7 @@
   justify-content: center;
   flex-direction: column;
   margin-right: 1.7%;
+  margin-bottom: 12%;
 }
 
 .subtitle {
@@ -118,6 +119,10 @@
   margin-top: -6%;
   color: white;
   line-height: 2em;
+}
+
+.logoText {
+  margin-bottom: -17%;
 }
 
 .sectionheader {

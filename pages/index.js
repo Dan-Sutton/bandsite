@@ -37,7 +37,7 @@ export default function Home() {
         ></img>
         <Link to="top" spy={true} smooth={true} offset={50} duration={500}>
           <img
-            src="https://res.cloudinary.com/dansutton/image/upload/v1658598395/bandsite/logo_u7fykq.png"
+            src="https://res.cloudinary.com/dsdpn6tzq/image/upload/v1660423647/Website/Logo_snvose.png"
             className={styles.navlogo}
           ></img>
         </Link>
@@ -105,7 +105,8 @@ export default function Home() {
         <div className={styles.videoandlogo}>
           <div className={styles.logo}>
             <img
-              src="https://res.cloudinary.com/dansutton/image/upload/v1658598394/bandsite/title_k36gya.png"
+              className={styles.logoText}
+              src="https://res.cloudinary.com/dsdpn6tzq/image/upload/v1660423935/Website/title_h904bd.png"
               alt="band title"
             ></img>
             <h2 className={styles.subtitle}>
@@ -115,7 +116,7 @@ export default function Home() {
 
           <video autoPlay loop muted infinite className={styles.video}>
             <source
-              src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
+              src="https://res.cloudinary.com/dsdpn6tzq/video/upload/v1660423435/Website/headervid_rz00eu.mov"
               type="video/mp4"
             />
           </video>
@@ -137,7 +138,7 @@ export default function Home() {
         <div className={styles.theband}>
           <h2 className={styles.sectionheader}>MEET THE BAND.</h2>
           <img
-            src="https://res.cloudinary.com/dansutton/image/upload/v1658598421/bandsite/headshots_pbuqeq.png"
+            src="https://res.cloudinary.com/dsdpn6tzq/image/upload/v1660424605/Website/Screenshot_2022-07-23_at_17.59.32_ihcen0.png"
             className={styles.headshots}
           ></img>
         </div>
@@ -147,14 +148,14 @@ export default function Home() {
 
           <video controls muted className={styles.galleryvideo}>
             <source
-              src="https://res.cloudinary.com/dansutton/video/upload/v1658593108/bandsite/headervid_mfwydn.mov"
+              src="https://res.cloudinary.com/dsdpn6tzq/video/upload/v1660423435/Website/headervid_rz00eu.mov"
               type="video/mp4"
             />
           </video>
 
           <video controls muted className={styles.galleryvideo}>
             <source
-              src="https://res.cloudinary.com/dansutton/video/upload/v1658776266/bandsite/pensax_pujrks.mp4"
+              src="https://res.cloudinary.com/dsdpn6tzq/video/upload/v1660423353/Website/pensax_zmvt97.mp4"
               type="video/mp4"
             />
           </video>
